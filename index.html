@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+    <h1>Jogo da Velha</h1>
+
+    <div id="div1">
+        <label for="palavra">Palavra: </label>
+        <input type="password" id="palavra">
+        <button onclick="preparar_jogo()">Start</button>
+        <div id="reinicio">
+            <button onclick="location.reload()">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <div>
+        <img src="imagens/i0.png" alt="imagem_forca" id="imagem">
+    </div> <!-- img --->
+
+    <br>
+    <!--Letra-->
+    <div id="letras">
+        <label id="A" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">A</label>
+        <label id="B" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">B</label>
+        <label id="C" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">C</label>
+        <label id="D" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">D</label>
+        <label id="E" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">E</label>
+        <label id="F" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">F</label>
+        <label id="G" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">G</label>
+        <label id="H" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">H</label>
+        <label id="I" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">I</label>
+        <label id="J" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">J</label>
+        <label id="L" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">L</label>
+        <label id="M" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">M</label>
+        <label id="N" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">N</label>
+        <label id="O" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">O</label>
+        <label id="P" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">P</label>
+        <label id="Q" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">Q</label>
+        <label id="R" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">R</label>
+        <label id="S" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">S</label>
+        <label id="T" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">T</label>
+        <label id="U" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">U</label>
+        <label id="V" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">V</label>
+        <label id="X" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">X</label>
+        <label id="Z" draggable="true" ondragstart="comeco(event)" ondragend="fim(event)">Z</label>
+    </div><br><br> 
+    <!-- letra --->
+
+    <div id="resposta" ondragover="emCima(event)" ondrop="verificar(event)"></div> <!-- respostas --->
+    <div id="erro" ondragover="emCima(event)" ondrop="verificar(event)"></div>
+    <div id="respota_gameOver" ondragover="emCima(event)" ondrop="verificar(event)"></div> 
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

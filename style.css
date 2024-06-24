@@ -1,0 +1,30 @@
+#resposta div{
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    display: table-cell;
+    font-size: 25px;
+    text-align: -webkit-center;
+    align-content: center;
+}
+
+img{
+    display: none;
+}
+
+#div1{
+    display: ruby;
+    font-size: 20px;
+}
+
+#letras{
+   font-size: 20px;
+}
+
+#resposta, #resposta_gameOver{
+    font-size: 20px;
+}
+
+button{
+    font-size: 15px;
+}
